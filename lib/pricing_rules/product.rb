@@ -1,18 +1,18 @@
 require 'json'
 
 module PricingRules
-  class PricingRule < Struct.new(:on, :rule)
+  class Product < Struct.new(:code, :name, :price)
     def self.all
       return @all if defined? @all
 
-      file = File.open('rule_config.json')
+      file = File.open('product.json')
       content = file.read
       file.close
       @all ||= JSON.parse(content).map do |data|
         new(
-          data['on'],
-          name: data.dig('rule', 'name'),
-          options: data.dig('rule', 'options')
+          data['code'],
+          data['name'],
+          data['price']
         )
       end
     end
