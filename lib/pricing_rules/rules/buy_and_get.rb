@@ -1,5 +1,5 @@
-module PricingRules
-  class BuyAndGet < Rule
+module PricingRules::Rules
+  class BuyAndGet < Base
     def total
       grouped.flat_map { |g| g.take(buy) }.sum
     end

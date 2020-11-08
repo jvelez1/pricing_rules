@@ -1,5 +1,5 @@
-module PricingRules
-  class DiscountBulkOnPricePercentage < Rule
+module PricingRules::Rules
+  class DiscountBulkOnPricePercentage < Base
     def total
       validation = options[:validation]
   

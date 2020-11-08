@@ -1,4 +1,4 @@
-RSpec.describe PricingRules::DiscountBulkOnPricePercentage do
+RSpec.describe PricingRules::Rules::DiscountBulkOnPricePercentage do
   let(:options) do
     {
       validation: 'greater_than_or_equal_to',

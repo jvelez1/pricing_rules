@@ -8,7 +8,7 @@ RSpec.describe PricingRules::RuleParser do
     it 'retuns base rule instance' do
       expect(
         described_class.parse(item, nil)
-      ).to be_a(PricingRules::Rule)
+      ).to be_a(PricingRules::Rules::Base)
     end
 
     context 'When there is valid conf' do
@@ -26,7 +26,7 @@ RSpec.describe PricingRules::RuleParser do
       it 'returns a valid instance' do
         expect(
           described_class.parse(item, **conf)
-        ).to be_a(PricingRules::DiscountBulkOnPricePercentage)
+        ).to be_a(PricingRules::Rules::DiscountBulkOnPricePercentage)
       end
     end
   end

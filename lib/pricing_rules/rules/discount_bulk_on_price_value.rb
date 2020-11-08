@@ -1,5 +1,5 @@
-module PricingRules
-  class DiscountBulkOnPriceValue < Rule
+module PricingRules::Rules
+  class DiscountBulkOnPriceValue < Base
     def total
       validation = options[:validation]
       if respond_to?(validation, :include_private) 
