@@ -1,3 +1,6 @@
+
+[![Ruby 2.7.1](https://img.shields.io/badge/ruby-2.7.1-blue.svg)](https://www.ruby-lang.org/es/news/2020/03/31/ruby-2-7-1-released/) ![Travis](https://api.travis-ci.com/jvelez1/pricing_rules.svg?branch=main)
+
 # PricingRules
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/pricing_rules`. To experiment with that code, run `bin/console` for an interactive prompt.
