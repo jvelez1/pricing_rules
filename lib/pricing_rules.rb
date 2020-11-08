@@ -6,12 +6,11 @@ require 'pricing_rules/item'
 require 'pricing_rules/rule'
 require 'pricing_rules/product'
 require 'pricing_rules/rule_parser'
+require 'pricing_rules/checkout'
 require "pricing_rules/version"
 
 module PricingRules
   class Error < StandardError; end
   # Your code goes here...
 
-  p pricing_rules = Rule.all
-  p Product.all
 end

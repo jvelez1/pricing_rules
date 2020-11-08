@@ -7,7 +7,7 @@ RSpec.describe PricingRules::RuleParser do
   describe '#parse' do
     it 'retuns base rule instance' do
       expect(
-        described_class.parse(item, nil)
+        described_class.parse(item, {})
       ).to be_a(PricingRules::Rules::Base)
     end
 

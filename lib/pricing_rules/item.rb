@@ -11,7 +11,7 @@ module PricingRules
     private
 
     def rule
-      RuleParser.parse(self, rule_conf)
+      RuleParser.parse(self, rule_conf&.rule || {})
     end
   end
 end

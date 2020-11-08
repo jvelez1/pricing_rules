@@ -6,6 +6,8 @@ require 'pricing_rules/rules/buy_and_get'
 require 'pricing_rules/item'
 require 'pricing_rules/rule'
 require 'pricing_rules/rule_parser'
+require 'pricing_rules/checkout'
+require 'pricing_rules/product'
 require "pricing_rules/version"
 
 

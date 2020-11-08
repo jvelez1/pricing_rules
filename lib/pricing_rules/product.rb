@@ -5,7 +5,7 @@ module PricingRules
     def self.all
       return @all if defined? @all
 
-      file = File.open('product.json')
+      file = File.open('products.json')
       content = file.read
       file.close
       @all ||= JSON.parse(content).map do |data|

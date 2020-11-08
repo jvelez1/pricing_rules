@@ -23,13 +23,13 @@ RSpec.describe PricingRules::Item do
 
   context 'When rule is BuyAndGet' do
     let(:rule_conf) do
-      {
+      Struct.new(:rule).new(
         name: 'BuyAndGet',
         options: {
           buy: 1,
           get: 1
         }
-      }
+      )
     end
   
     it 'returns a valid total' do
