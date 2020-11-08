@@ -10,7 +10,7 @@ module PricingRules
         end
       end
       
-      klass ? klass.new(item, **options) : Rules::Base.new(item, **{})
+      klass&.new(item, **options) || Rules::Base.new(item, **{})
     end
   end
 end

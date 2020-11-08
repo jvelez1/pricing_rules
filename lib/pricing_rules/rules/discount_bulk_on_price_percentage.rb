@@ -7,7 +7,7 @@ module PricingRules::Rules
         total = send(validation)
       end
   
-      total ? total : super
+      total || super
     end
   
     private

@@ -20,13 +20,8 @@ module PricingRules
   
   
     private
-    
-    def find_product(code)
-      Product.all.find { |product| product.code == code }
-    end
-
     def increase_or_initialize(product)
-      item = @items.find { |item| item.code == product.code }
+      item = find_item(product.code)
       return item.increase! if item
   
       @items << Item.new(
@@ -35,6 +30,14 @@ module PricingRules
         1,
         find_rule(product.code)
       )
+    end
+
+    def find_item(code)
+      @items.find { |item| item.code == code }
+    end
+
+    def find_product(code)
+      Product.all.find { |product| product.code == code }
     end
 
     def find_rule(code)
