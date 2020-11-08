@@ -1,7 +1,7 @@
 module PricingRules
-  class Item < Struct.new(:code, :price, :count, :rule_conf)
+  class Item < Struct.new(:code, :price, :quantity, :rule_conf)
     def increase!(num = 1)
-      self.count += num
+      self.quantity += num
     end
 
     def total

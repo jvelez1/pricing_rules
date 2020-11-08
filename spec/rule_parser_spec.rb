@@ -1,6 +1,6 @@
 RSpec.describe PricingRules::RuleParser do
   let(:item) do
-    Struct.new(:code, :price, :count)
+    Struct.new(:code, :price, :quantity)
           .new('GRC', 3.11, 2)
   end
 
@@ -18,7 +18,7 @@ RSpec.describe PricingRules::RuleParser do
           options: {
             validation: 'greater_than_or_equal_to',
             percentage: 0.6667,
-            count: 3
+            quantity: 3
           }
         }
       end

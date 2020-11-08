@@ -3,12 +3,12 @@ RSpec.describe PricingRules::Rules::DiscountBulkOnPricePercentage do
     {
       validation: 'greater_than_or_equal_to',
       percentage: 0.6667,
-      count: 3
+      quantity: 3
     }
   end
 
   let(:item) do
-    Struct.new(:code, :price, :count)
+    Struct.new(:code, :price, :quantity)
           .new('CF1', 11.23, 3)
   end
 

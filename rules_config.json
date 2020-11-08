@@ -15,7 +15,7 @@
       "name":"DiscountBulkOnPriceValue",
       "options":{
           "validation":"greater_than_or_equal_to",
-          "count":3,
+          "quantity":3,
           "forced_price":4.5
         }
      }
@@ -27,7 +27,7 @@
       "options":{
           "validation":"greater_than_or_equal_to",
           "percentage":0.6667,
-          "count":3
+          "quantity":3
         }
      }
   }

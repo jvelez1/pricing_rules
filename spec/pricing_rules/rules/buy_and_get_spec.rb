@@ -7,7 +7,7 @@ RSpec.describe PricingRules::Rules::BuyAndGet do
   end
 
   let(:item) do
-    Struct.new(:code, :price, :count)
+    Struct.new(:code, :price, :quantity)
           .new('GRC', 3.11, 2)
   end
 

@@ -13,7 +13,7 @@ module PricingRules::Rules
     end
   
     def values
-      Array.new(item_count, item_price)
+      Array.new(item_quantity, item_price)
     end
   
     def size_options

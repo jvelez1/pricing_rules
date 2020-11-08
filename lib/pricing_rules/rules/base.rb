@@ -7,13 +7,13 @@ module PricingRules::Rules
     end
     
     def total
-      item_count * item_price
+      item_quantity * item_price
     end
   
     private
   
-    def item_count
-      item.count
+    def item_quantity
+      item.quantity
     end
   
     def item_price

@@ -2,13 +2,13 @@ RSpec.describe PricingRules::Rules::DiscountBulkOnPriceValue do
   let(:options) do
     {
       validation: 'greater_than_or_equal_to',
-      count: 3,
+      quantity: 3,
       forced_price: 4.5
     }
   end
 
   let(:item) do
-    Struct.new(:code, :price, :count)
+    Struct.new(:code, :price, :quantity)
           .new('SR1', 5, 3)
   end
 
