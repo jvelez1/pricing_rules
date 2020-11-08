@@ -24,7 +24,7 @@ RSpec.describe PricingRules::Item do
   context 'When rule is BuyAndGet' do
     let(:rule_conf) do
       Struct.new(:rule).new(
-        name: 'BuyAndGet',
+        class: 'BuyAndGet',
         options: {
           buy: 1,
           get: 1

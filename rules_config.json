@@ -2,7 +2,7 @@
   {
     "on":"GR1",
     "rule":{
-      "name":"BuyAndGet",
+      "class":"BuyAndGet",
       "options":{
           "buy":1,
           "get":1
@@ -12,7 +12,7 @@
   {
     "on":"SR1",
     "rule":{
-      "name":"DiscountBulkOnPriceValue",
+      "class":"DiscountBulkOnPriceValue",
       "options":{
           "validation":"greater_than_or_equal_to",
           "quantity":3,
@@ -23,7 +23,7 @@
   {
     "on":"CF1",
     "rule":{
-      "name":"DiscountBulkOnPricePercentage",
+      "class":"DiscountBulkOnPricePercentage",
       "options":{
           "validation":"greater_than_or_equal_to",
           "percentage":0.6667,

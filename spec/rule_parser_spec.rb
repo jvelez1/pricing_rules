@@ -14,7 +14,7 @@ RSpec.describe PricingRules::RuleParser do
     context 'When there is valid conf' do
       let(:conf) do
         {
-          name: 'DiscountBulkOnPricePercentage',
+          class: 'DiscountBulkOnPricePercentage',
           options: {
             validation: 'greater_than_or_equal_to',
             percentage: 0.6667,

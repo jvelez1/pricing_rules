@@ -11,7 +11,7 @@ module PricingRules
       @all ||= JSON.parse(content).map do |data|
         new(
           data['on'],
-          name: data.dig('rule', 'name'),
+          class: data.dig('rule', 'class'),
           options: data.dig('rule', 'options')
         )
       end
