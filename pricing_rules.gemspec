@@ -3,20 +3,20 @@ require_relative 'lib/pricing_rules/version'
 Gem::Specification.new do |spec|
   spec.name          = "pricing_rules"
   spec.version       = PricingRules::VERSION
-  spec.authors       = ["josue"]
+  spec.authors       = ["Josue Velez"]
   spec.email         = ["josuevelezdr@gmail.com"]
 
   spec.summary       = %q{Write a short summary, because RubyGems requires one.}
   spec.description   = %q{Write a longer description or delete this line.}
-  spec.homepage      = "http://v3lez.com"
+  spec.homepage      = "https://github.com/jvelez1"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
   spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "http://v3lez.com"
-  spec.metadata["changelog_uri"] = "http://v3lez.com"
+  spec.metadata["source_code_uri"] = "https://github.com/jvelez1/pricing_rules"
+  spec.metadata["changelog_uri"] = "https://github.com/jvelez1/pricing_rules"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
