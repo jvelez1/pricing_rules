@@ -5,9 +5,8 @@ module PricingRules
     def self.all
       return @all if defined? @all
 
-      file = File.open('rules_config.json')
-      content = file.read
-      file.close
+      raise 'No file found' unless File.exists?('rules_config.json')
+      content = File.read('rules_config.json')
       @all ||= JSON.parse(content).map do |data|
         new(
           data['on'],
