@@ -14,10 +14,10 @@ module PricingRules::Rules
   
     def greater_than_or_equal_to
       if item_quantity >= options[:quantity] && options[:percentage]
-        return (method(:total).super_method.call * options[:percentage]).round(2)
+        value = (method(:total).super_method.call * options[:percentage]).round(2)
       end
   
-      nil
+      value
     end
   end  
 end

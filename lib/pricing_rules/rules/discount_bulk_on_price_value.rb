@@ -13,10 +13,10 @@ module PricingRules::Rules
   
     def greater_than_or_equal_to
       if item_quantity >= options[:quantity]
-        return item_quantity * options[:forced_price]
+        value = item_quantity * options[:forced_price]
       end
   
-      nil
+      value
     end
   end
 end
